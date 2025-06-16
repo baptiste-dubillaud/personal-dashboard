@@ -1,0 +1,27 @@
+# Use the official Python image as the base image
+FROM python:3.10-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the requirements file
+COPY requirements.txt* ./
+
+# Install dependencies
+RUN pip install --no-cache-dir --upgrade pip
+RUN if [ -f requirements.txt ]; then pip install --no-cache-dir -r requirements.txt; fi
+
+# Copy the rest of the application code
+COPY . .
+
+ARG BACKEND_API_HOST
+ARG BACKEND_API_PORT
+
+# Expose the port the app runs on
+EXPOSE $BACKEND_API_PORT
+
+# Start the application
+CMD ["python", "main.py"]
+#CMD ["uvicorn", "main:app", "--host", $BACKEND_API_HOST, "--port", "8000"]
+#CMD uvicorn main:app --host $BACKEND_API_HOST --port $BACKEND_API_PORT --reload
+#CMD ["sh", "-c", "uvicorn main:app --host ${BACKEND_API_HOST:-0.0.0.0} --port ${BACKEND_API_PORT:-8000} --reload"]
