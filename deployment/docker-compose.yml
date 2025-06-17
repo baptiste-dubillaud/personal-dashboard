@@ -17,30 +17,27 @@ services:
       # Env kind
       - FRONT_ENV=${FRONT_ENV}
 
-      # Frontend info
-      - FRONTEND_URL=http://${FRONTEND_URL}:${FRONTEND_PORT}
-
       # API url
       - BACKEND_URL=http://backend:${BACKEND_API_PORT}${BACKEND_API_DEFAULT_ROUTE}
     # depends_on:
     #   - backend
 
-  backend:
-    build:
-      context: ../backend
-      dockerfile: Dockerfile.backend
-      args:
-        BACKEND_API_PORT: ${BACKEND_API_PORT}
-        BACKEND_API_HOST: ${BACKEND_API_HOST}
-    ports:
-      - "${BACKEND_API_PORT}:${BACKEND_API_PORT}"
-    volumes:
-      - ../backend/src:/app
-    environment:
-      ##### Env kind
-      - API_ENV=${API_ENV}
+  # backend:
+  #   build:
+  #     context: ../backend
+  #     dockerfile: Dockerfile.backend
+  #     args:
+  #       BACKEND_API_PORT: ${BACKEND_API_PORT}
+  #       BACKEND_API_HOST: ${BACKEND_API_HOST}
+  #   ports:
+  #     - "${BACKEND_API_PORT}:${BACKEND_API_PORT}"
+  #   volumes:
+  #     - ../backend/src:/app
+  #   environment:
+  #     ##### Env kind
+  #     - API_ENV=${API_ENV}
 
-      - UVICORN_WORKERS=1
+  #     - UVICORN_WORKERS=1
 
       ##### Database
       # Database info
