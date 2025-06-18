@@ -1,0 +1,16 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Background for iOS app icon -->
+  <rect width="180" height="180" rx="20" fill="#282828"/>
+  
+  <!-- PersonalHub logo scaled for iOS -->
+  <g transform="translate(22.5, 22.5)">
+    <!-- Core circle -->
+    <circle cx="67.5" cy="63.75" r="30" fill="#4dabf7"/>
+    
+    <!-- Orbiting modules -->
+    <circle cx="15" cy="15" r="15" fill="#17C3B2"/> <!-- Health -->
+    <circle cx="120" cy="15" r="15" fill="#FE6D73"/> <!-- Calendar -->
+    <circle cx="15" cy="112.5" r="15" fill="#227C9D"/> <!-- Finance -->
+    <circle cx="120" cy="112.5" r="15" fill="#F4B400"/> <!-- Habits -->
+  </g>
+</svg>

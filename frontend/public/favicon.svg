@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Background with rounded corners -->
+  <rect width="32" height="32" rx="4" fill="#282828"/>
+  
+  <!-- Scaled down version of PersonalHub logo -->
+  <g transform="translate(4, 4)">
+    <!-- Core circle (center) -->
+    <circle cx="12" cy="11" r="5.3" fill="#4dabf7"/>
+    
+    <!-- Orbiting modules (smaller and repositioned) -->
+    <circle cx="2.5" cy="2.5" r="2.5" fill="#17C3B2"/> <!-- Health -->
+    <circle cx="21.5" cy="2.5" r="2.5" fill="#FE6D73"/> <!-- Calendar -->
+    <circle cx="2.5" cy="20" r="2.5" fill="#227C9D"/> <!-- Finance -->
+    <circle cx="21.5" cy="20" r="2.5" fill="#F4B400"/> <!-- Habits -->
+  </g>
+</svg>
