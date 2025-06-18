@@ -9,6 +9,21 @@
 
     --vt-indigo: #2c3e50;
 
+    // Typography
+    --vt-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    --vt-font-family-mono: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace;
+
+    // Accent colors for PersonalHub
+    --vt-accent-primary: #e67635;
+    --vt-accent-primary-rgb: #{red(#e67635)}, #{green(#e67635)}, #{blue(#e67635)};
+    --vt-accent-primary-hover: #d1652c;
+    --vt-accent-health: #17C3B2;
+    --vt-accent-health-hover: #149f8e;
+    --vt-accent-calendar: #FE6D73;
+    --vt-accent-calendar-hover: #e55a5f;
+    --vt-accent-finance: #227C9D;
+    --vt-accent-finance-hover: #1d6a85;
+
     --vt-divider-light-1: rgba(60, 60, 60, 0.29);
     --vt-divider-light-2: rgba(60, 60, 60, 0.12);
     --vt-divider-dark-1: rgba(84, 84, 84, 0.65);
@@ -28,6 +43,11 @@
     --vt-text-secondary: var(--vt-black-soft);
     --vt-text-tertiary: var(--vt-black-mute);
     --vt-divider: var(--vt-divider-light-1);
+
+    // Smooth transitions for theme changes
+    * {
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
 }
 
 .dark-theme {

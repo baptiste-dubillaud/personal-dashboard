@@ -1,7 +1,7 @@
 {
   "name": "PersonalHub - Your Personal Dashboard",
   "short_name": "PersonalHub",
-  "description": "A comprehensive personal dashboard for managing your health, calendar, finance, and habits",
+  "description": "A comprehensive personal dashboard for managing your health, calendar, and finance.",
   "icons": [
     {
       "src": "/favicon.svg",

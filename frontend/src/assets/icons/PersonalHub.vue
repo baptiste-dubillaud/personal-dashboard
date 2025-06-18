@@ -8,7 +8,7 @@
       fill="none"
       class="personal-hub-logo"
     >
-      <rect width="240" height="240" rx="24" :fill="'var(--vt-bg-secondary)'"/>
+      <rect width="240" height="240" rx="24" :fill="'var(--vt-bg-secondary)'" class="background-rect" style="transition: fill 0.3s ease;"/>
       <g transform="translate(30, 30)">
         <!-- Core circle (self/center of life) -->
         <circle cx="90" cy="85" r="40" fill="#4dabf7"/>
@@ -17,16 +17,10 @@
         <circle cx="20" cy="20" r="20" fill="#17C3B2" /> <!-- Health -->
         <circle cx="160" cy="20" r="20" fill="#FE6D73"/> <!-- Calendar -->
         <circle cx="20" cy="150" r="20" fill="#227C9D"/> <!-- Finance -->
-        <circle cx="160" cy="150" r="20" fill="#F4B400"/> <!-- Habits -->
-        
-        <!-- Connecting arcs (symbolic orbit paths) -->
-        <!-- <path d="M50,50 A56.57,56.57 0 0,1 120,40" :stroke="orbitsColor" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
-        <path d="M50,130 A56.57,56.57 0 0,1 120,120" :stroke="orbitsColor" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
-        <path d="M130,50 A56.57,56.57 0 0,1 120,120" :stroke="orbitsColor" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
-        <path d="M50,50 A56.57,56.57 0 0,1 40,120" :stroke="orbitsColor" stroke-width="1" stroke-dasharray="3 3" fill="none"/> -->
+        <circle cx="160" cy="150" r="20" fill="#F4B400"/> <!-- Habits -->s
       </g>
 
-      <text v-if="showName" x="50%" y="225" text-anchor="middle" :fill="'var(--vt-text-primary)'" font-size="20" font-family="Segoe UI, sans-serif" font-weight="600">
+      <text v-if="showName" x="50%" y="225" text-anchor="middle" :fill="'var(--vt-text-primary)'" font-size="20" font-family="Segoe UI, sans-serif" font-weight="600" class="logo-text" style="transition: fill 0.3s ease;">
         PersonalHub
       </text>
       
