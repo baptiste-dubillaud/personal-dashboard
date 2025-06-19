@@ -2,8 +2,7 @@
     <div class="theme-switcher">
         <!-- Theme Toggle Button -->
         <button @click="toggleTheme" class="theme-toggle-button">
-            <font-awesome-icon :icon="isDark ? 'fas fa-sun' : 'fas fa-moon'"></font-awesome-icon>
-            zedzef
+            <font-awesome-icon :icon="isDark ? 'fas fa-sun' : 'fas fa-moon'" class="icon"></font-awesome-icon>
         </button>
     </div>
 </template>
@@ -52,12 +51,23 @@ export default {
 @use '@/assets/base.scss';
 
 .theme-toggle-button {
-    background-color: var(--vt-bg-secondary);
+    background-color: var(--vt-bg-primary);
     border: 1px solid var(--vt-border-primary);
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1.5rem;
     color: var(--vt-text-primary);
-    padding: 0px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    
+    padding: 10px 0px;
+
+    .icon {
+        font-size: 1.3rem;
+    }
 }
 
 </style>
