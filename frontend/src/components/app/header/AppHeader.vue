@@ -139,7 +139,7 @@ watch(() => route.path, () => {
 
         &:hover {
             color: var(--vt-text-primary);
-            background-color: rgba(var(--vt-accent-primary-rgb), 0.05);
+            background-color: rgba(var(--vt-accent-primary), 0.05);
         }
 
         &.router-link-active {
