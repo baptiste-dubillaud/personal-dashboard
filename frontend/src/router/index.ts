@@ -2,11 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 
 // Lazy load components for better performance
-const Home = () => import('@/views/Home.vue')
-const Health = () => import('@/views/Health.vue')
-const Calendar = () => import('@/views/Calendar.vue')
-const Finance = () => import('@/views/Finance.vue')
-const Settings = () => import('@/views/Settings.vue')
+const Home = () => import('@/pages/Home/Home.vue')
+const Health = () => import('@/pages/Health/Health.vue')
+const Calendar = () => import('@/pages/Calendar/Calendar.vue')
+const Finance = () => import('@/pages/Finance/Finance.vue')
+const Settings = () => import('@/pages/Settings/Settings.vue')
 
 const routes: RouteRecordRaw[] = [
   {
